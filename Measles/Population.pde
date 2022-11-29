@@ -10,7 +10,6 @@ void population() {
   faceY  = centerY;
   faceDiameter = appHeight;
   //
-  //
 } //End Population
 //
 // End Population Subprogram

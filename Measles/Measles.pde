@@ -1,19 +1,20 @@
 //Global Variables
 int appWidth, appHeight;
+int reset=1;
 //
 void setup() {
   //Display & Orientation
-  size(600, 400);
+  size(600, 400); 
   displayOrientation();
-  appWidth= width;
+  appWidth = width;
   appHeight = height;
   //
   population();
   //Theme: i.e. Face (will work in portrait and landscape)
   faceSetup();
   eyes();
-  nose();
   mouth();
+  nose();
   measlesDynamic();
   //Background Image (could be in draw too)
 }//End setup
@@ -21,8 +22,8 @@ void setup() {
 void draw() {
   //OS System Button
   //Start Button | Measles Reset Button
-  //Theme: face & measles with different size and colours
-  }//End draw
+  //Theme: face & measles with different sizes and colours
+}//End draw
 //
 void keyPressed() {
   //KeyBoard Shortcuts

@@ -3,6 +3,7 @@ int appWidth, appHeight;
 int reset=1;
 color resetWhite=#FFFFFF;
 Boolean nightMode=false; //Basic Night Mode only changes measles
+Boolean start=false,  nowReallyStart=false;
 //
 void setup() {
   //Display & Orientation
@@ -25,6 +26,7 @@ void draw() {
   eyes();
   mouth();
   nose();
+  quitButton();
 }//End draw
 //
 void keyPressed() {
@@ -36,10 +38,15 @@ void keyPressed() {
       nightMode=false;
     }
   }
+  //
+  if ( key=='Q' && start==true ) nowReallyStart = true;
+  //
 }//End keyPressed
 //
 void mousePressed() {
   //OS System Button
+  start = true;
+  println("start By Pressing Space The Space Bar");
   //Start Button
   //Quit Button
   //Night Mode
